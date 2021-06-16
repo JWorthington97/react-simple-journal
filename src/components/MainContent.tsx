@@ -1,4 +1,4 @@
-import FixedEntry from "./FixedEntry";
+//import FixedEntry from "./FixedEntry";
 import JournalEntry from "./JournalEntry";
 
 function MainContent(): JSX.Element {
