@@ -1,15 +1,31 @@
-import FixedEntry from "./FixedEntry";
+//import FixedEntry from "./FixedEntry";
 import JournalEntry from "./JournalEntry";
 
 function MainContent(): JSX.Element {
   return (
     <main>
-      <FixedEntry />
-      <FixedEntry />
+      <JournalEntry
+        title={"My first day"}
+        tags={["learning", "progress", "journey"]}
+        body={""}
+        views={1}
+        likes={10000}
+        postDate={{ month: "February", day: 1, year: 2021 }}
+      />
+      <JournalEntry
+        title={"My last day"}
+        tags={["learning", "progress", "journey"]}
+        body={"What a journey!"}
+        views={100}
+        likes={1000}
+        postDate={{ month: "September", day: 15, year: 2021 }}
+      />
       <JournalEntry
         title={"Discovering React components"}
         tags={["react", "components", "reusability"]}
-        body={"Today, I discovered reusable React components - I love them! It makes things so much more convenient!"}
+        body={
+          "Today, I discovered reusable React components - I love them! It makes things so much more convenient!"
+        }
         views={1}
         likes={1}
         postDate={{ month: "June", day: 13, year: 2021 }}
